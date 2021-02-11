@@ -43,6 +43,6 @@ select.addEventListener("change", () => {
     fetch(`https://dog.ceo/api/breed/${select.value}/images/random`)
     .then(res => res.json())
     .then(data => {
-        
+        replaceImage(data.message);
     })
 })
